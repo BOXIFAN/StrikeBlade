@@ -6,10 +6,11 @@
     <title>Strike Blade 产品展示</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             margin: 0;
             padding: 0;
+            color: #333;
         }
         .container {
             width: 90%;
@@ -23,6 +24,11 @@
             margin: 20px auto;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .intro:hover, .product:hover, .team:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .intro-title, .page-title {
             font-size: 32px;
@@ -70,6 +76,11 @@
             max-width: 200px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-gallery a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
         .image-gallery img {
             width: 100%;
@@ -78,17 +89,6 @@
         .team h2 {
             font-size: 28px;
             color: #4b0082;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .team ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .team ul li {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
         }
     </style>
 </head>
