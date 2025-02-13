@@ -1,84 +1,152 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1796轻骑兵军刀 - 详情</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .product-title {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-        .product-description {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        .price {
-            font-weight: bold;
-            color: #e67e22;
-        }
-        .image-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .image-gallery a {
-            display: block;
-            max-width: 200px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .image-gallery img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1796轻骑兵军刀 - 详情</title>
+  <!-- 引入古典字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    /* 重置样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* 使用带纹理的背景和复古色调 */
+    body {
+      font-family: 'Libre Baskerville', serif;
+      background: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+      background-color: #f4f1e9;
+      color: #2c2c2c;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    /* 页面头部 */
+    .header {
+      text-align: center;
+      padding: 30px 0;
+      background: #d7ccc8;
+      border-bottom: 4px solid #a67c52;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #3e2723;
+    }
+    .header p {
+      font-size: 20px;
+      color: #5d4037;
+    }
+    /* 产品详情容器 */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border: 2px solid #a67c52;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .product-title {
+      font-family: 'Cinzel', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #3e2723;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .product-description {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #5d4037;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .price {
+      font-weight: bold;
+      color: #bf360c;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    /* 图片画廊 */
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .image-gallery a {
+      display: block;
+      max-width: 220px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #a67c52;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .image-gallery a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .image-gallery img {
+      width: 100%;
+      display: block;
+    }
+    /* 返回链接 */
+    .back-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #bf360c;
+      text-decoration: none;
+      font-size: 18px;
+      border: 1px solid #bf360c;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .back-link:hover {
+      background-color: #bf360c;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="product-title">1796轻骑兵军刀</h1>
-        <p class="product-description">1796年式轻骑兵军刀由英国骑兵军官约翰·格洛弗（John Gaspard Le Marchant）设计，受到匈牙利和其他东欧骑兵军刀风格的启发。这种军刀有着显著的弧度和宽阔的刀身，更适合切割而非刺击。刀刃通常长约83厘米，刀背较厚，刀尖略呈弯曲，使它更适合在高速骑行中进行挥砍。</p>
-        <p class="product-description">全长95cm，重约800g，是目前最接近还原且尊重历史的一款绝佳马刀。</p>
-        <p class="product-description price">价格：¥1500.00</p>
+  <!-- 页面头部 -->
+  <div class="header">
+    <h1>Strike Blade</h1>
+    <p>复原中世纪冷兵器的匠心之作</p>
+  </div>
 
-        <!-- 图片画廊 -->
-        <div class="image-gallery">
-            <a href="./1796素材/1796-1.png" target="_blank">
-                <img src="./1796素材/1796-1.png" alt="1796">
-            </a>
-            <a href="./1796素材/1796-2.png" target="_blank">
-                <img src="./1796素材/1796-2.png" alt="1796长剑图片2">
-            </a>
-            <a href="./1796素材/1796-3.png" target="_blank">
-                <img src="./1796素材/1796-3.png" alt="1796图片3">
-            </a>
-            <!-- 继续添加图片 -->
-        </div>
+  <div class="container">
+    <h1 class="product-title">1796轻骑兵军刀</h1>
+    <p class="product-description">
+      1796年式轻骑兵军刀由英国骑兵军官约翰·格洛弗（John Gaspard Le Marchant）设计，受到匈牙利和其他东欧骑兵军刀风格的启发。这种军刀有着显著的弧度和宽阔的刀身，更适合切割而非刺击。刀刃通常长约83厘米，刀背较厚，刀尖略呈弯曲，使它更适合在高速骑行中进行挥砍。
+    </p>
+    <p class="product-description">
+      全长95cm，重约800g，是目前最接近还原且尊重历史的一款绝佳马刀。
+    </p>
+    <p class="price">价格：¥1500.00</p>
 
-        <a href="index.html" class="back-link">返回产品展示页面</a>
+    <!-- 图片画廊 -->
+    <div class="image-gallery">
+      <a href="./1796素材/1796-1.png" target="_blank">
+        <img src="./1796素材/1796-1.png" alt="1796预览图">
+      </a>
+      <a href="./1796素材/1796-2.png" target="_blank">
+        <img src="./1796素材/1796-2.png" alt="1796预览图2">
+      </a>
+      <a href="./1796素材/1796-3.png" target="_blank">
+        <img src="./1796素材/1796-3.png" alt="1796预览图3">
+      </a>
+      <!-- 继续添加图片 -->
     </div>
+
+    <a href="index.html" class="back-link">返回产品展示页面</a>
+  </div>
 </body>
 </html>
+
