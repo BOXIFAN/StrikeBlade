@@ -71,22 +71,24 @@
       font-size: 20px;
       margin-bottom: 20px;
     }
-    /* 图片画廊 */
+    /* 图片画廊：使用 Grid + aspect-ratio 实现整齐布局 */
     .image-gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 15px;
       margin-top: 20px;
-      justify-content: center;
+      justify-items: center; /* 让每个网格中的项目居中 */
     }
     .image-gallery a {
-      display: block;
-      max-width: 220px;
+      width: 100%;
+      aspect-ratio: 1 / 1; /* 正方形，可根据需要改为 4/3、16/9 等 */
       border-radius: 8px;
       overflow: hidden;
       border: 1px solid #a67c52;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+      display: block;
+      position: relative;
     }
     .image-gallery a:hover {
       transform: translateY(-5px);
@@ -94,6 +96,8 @@
     }
     .image-gallery img {
       width: 100%;
+      height: 100%;
+      object-fit: cover; /* 裁剪图片以适应容器 */
       display: block;
     }
     /* 返回链接 */
@@ -131,7 +135,7 @@
     </p>
     <p class="price">价格：¥1?00.00</p>
 
-    <!-- 图片画廊 -->
+    <!-- 图片画廊：使用 Grid 布局 -->
     <div class="image-gallery">
       <a href="./侧剑/侧剑.png" target="_blank">
         <img src="./侧剑/侧剑.png" alt="侧剑">
@@ -145,7 +149,7 @@
       <a href="./侧剑/侧剑4.png" target="_blank">
         <img src="./侧剑/侧剑4.png" alt="侧剑4">
       </a>
-      <!-- 继续添加图片 -->
+      <!-- 如果有更多图片，可以继续添加 -->
     </div>
 
     <a href="index.html" class="back-link">返回产品展示页面</a>
