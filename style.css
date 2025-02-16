@@ -1,0 +1,191 @@
+/* ========== 重置样式 ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ========== 使用带纹理的背景和复古色调 ========== */
+  body {
+    font-family: 'Libre Baskerville', serif;
+    background: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-color: #f4f1e9;
+    color: #2c2c2c;
+    line-height: 1.6;
+  }
+  
+  /* ========== 容器 ========== */
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  /* ========== 标题字体 ========== */
+  h1, h2 {
+    font-family: 'Cinzel', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  /* ========== 首页与页面标题 ========== */
+  .intro-title, .page-title {
+    font-size: 36px;
+    color: #3e2723;
+  }
+  .intro-description {
+    font-size: 18px;
+    color: #5d4037;
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  /* ========== 古风头部区域 ========== */
+  .header {
+    text-align: center;
+    padding: 30px 0;
+    background: #d7ccc8;
+    border-bottom: 4px solid #a67c52;
+  }
+  .header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #3e2723;
+  }
+  .header p {
+    font-size: 20px;
+    color: #5d4037;
+  }
+  
+  /* ========== 导航栏样式 ========== */
+  .nav-buttons {
+    margin-top: 15px;
+  }
+  .nav-buttons a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 16px;
+    border: 2px solid #a67c52;
+    background-color: #d7ccc8;
+    color: #3e2723;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .nav-buttons a:hover {
+    background-color: #a67c52;
+    color: #fff;
+  }
+  .nav-buttons a.active {
+    background-color: #a67c52;
+    color: #fff;
+  }
+  
+  /* ========== 模块公共样式（用于卡片效果） ========== */
+  .intro, .product, .team, .articles, .bulletin {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    margin: 20px auto;
+    border: 2px solid #a67c52;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .intro:hover, .product:hover, .team:hover,
+  .articles:hover, .bulletin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ========== 产品信息 ========== */
+  .product-info h2 {
+    color: #4e342e;
+    font-size: 28px;
+  }
+  .product-info p {
+    font-size: 16px;
+    color: #4e342e;
+    margin: 10px 0;
+  }
+  .price {
+    font-size: 22px;
+    color: #bf360c;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .product-preview {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #a67c52;
+  }
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+  
+  /* ========== 图像展示 ========== */
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .image-gallery a {
+    display: block;
+    max-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .image-gallery a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  .image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* ========== 团队介绍 ========== */
+  .team h2 {
+    font-size: 30px;
+    color: #4e342e;
+    margin-top: 15px;
+  }
+  .team ul {
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .team li a {
+    color: #bf360c;
+    text-decoration: none;
+  }
+  
+  /* ========== 文章区、公告区样式 ========== */
+  .article, .announcement {
+    text-align: left;
+    margin: 15px 0;
+  }
+  .article h2, .announcement h2 {
+    font-size: 24px;
+    color: #4e342e;
+  }
+  .article p, .announcement p {
+    font-size: 16px;
+    color: #5d4037;
+    margin: 8px 0;
+  }
+  .article a, .announcement a {
+    color: #bf360c;
+    text-decoration: none;
+  }
+  .article a:hover, .announcement a:hover {
+    text-decoration: underline;
+  }
+  
