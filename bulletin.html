@@ -8,6 +8,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
   <!-- 引入公共样式文件 -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    .details-content {
+      margin-top: 15px;
+      line-height: 1.8;
+      color: #4e342e;
+    }
+
+    .details-content h3 {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #3e2723;
+    }
+
+    .details-content ul {
+      margin-left: 20px;
+    }
+
+    .details-content li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   <!-- 古风头部 -->
@@ -20,7 +41,7 @@
       <a href="index.html">首页</a>
       <a href="products.html">产品展示</a>
       <a href="articles.html">刀剑研究文章</a>
-      <a href="bulletin.html" class="active">公告</a>
+      <a href="bulletin.html" class="active">客户须知</a>
     </nav>
   </div>
 
@@ -28,38 +49,50 @@
   <div class="container bulletin">
     <h1 class="page-title">进度公告</h1>
 
-    <!-- 示例公告1 -->
-    
-<div class="announcement">
-  <h2>最新产品研发进展</h2>
-  <p>车丘嘉进度更新...</p>
-  <details>
-    <summary>了解详情</summary>
-    <p>
-      车丘嘉已完成装具打样，调整与刀条锻造完成后将开始进行组装。
-      <!-- 图片画廊 -->
-      <div class="image-gallery">
-        <a href="./车丘嘉素材/车丘嘉装具0.jpg" target="_blank">
-          <img src="./车丘嘉素材/车丘嘉装具0.jpg" alt="1">
-        </a>
-        <a href="./车丘嘉素材/车丘嘉装具1.jpg" target="_blank">
-          <img src="./车丘嘉素材/车丘嘉装具1.jpg" alt="2">
-        </a>
-        <!-- 继续添加图片 -->
-        <a href="./车丘嘉素材/车丘嘉装具2.jpg" target="_blank">
-          <img src="./车丘嘉素材/车丘嘉装具2.jpg" alt="3">
-        </a>
-      </div>
-    
+    <div class="announcement">
+      <h2>客户须知项目</h2>
+      <p>Strike Blade 的售前须知，涵盖产品用途、售后与注意事项。以下为详细条款：</p>
 
-    </p>
-  </details>
-</div>
+      <details>
+        <summary>点击展开详细内容</summary>
+        <div class="details-content">
+          <h3>1. 你们的产品是“砍砍乐”吗？</h3>
+          <p>我们设计的剑参考于历史实物，同时融合我们个人的设计理念，在保证基础性能的情况也会下以武术向，美术向等偏向专项进行设计与制作，同时保证基础的性能与美观。</p>
 
+          <h3>2. 砍硬东西包不包补偿？那规格外的物品包括但不限于什么？</h3>
+          <p>超规物品与恶意诋毁不包赔偿，如果在正常使用范围内毁坏需要提供视频，规格外物品包括但不限于斩树，斩铁，斩其他兵器(ps：细树枝类看情况和刃损而定)，另外如果有需要，我们也会给出研磨方面的建议</p>
 
-  
+          <h3>3. 售后是什么样的？</h3>
+          <p>如果确认在正常使用范畴内损坏，我们会进行售后处理，包括但不限于优惠卷，现款和替换，会尽量协商至客户与商家达成彼此利益适宜的解决方案。我们会在到货7天内每天询问状态，当然，如果造成困扰的话可以和我们说不需要这项。发生问题后，我们会尽快回复并着手解决问题，对事故进行处理，检查问题，进行判定或协商。但是很遗憾对于地方邮寄条例和管控力度的不同，有可能我们无法从中协助邮寄退回，但是会尽力提供解决方案并且努力尝试。未成年客户请获得家长许可。
+          </p>
 
-    <!-- 你可以根据需要添加更多公告块 -->
+          <h3>4. 生产模式</h3>
+          <p>内容包括设计和自主制造，以及代工合作生产。同时兼有自主和代工的工作室。
+            包括但不限于武备。
+            </p>
+
+          <h3>5. 开刃情况</h3>
+          <p>可以看客户的喜好，无要求默认开得锋利。短兵器因条例和安全考虑，我们只能开斧刃或预留刃。</p>
+
+          <h3>6. 我对这件产品有一部分不合个人喜好的点，可以加钱改修吗？</h3>
+          <p>们会根据复杂度而定，条子是没法更改的，装具上简单切割倒是无所谓，复杂的得看情况，我们个人建议您如果有需要可以全套定制，我们会从头与您一起对接完成这把剑，进行个性化的定制，在预算内尽量满足需求。</p>
+
+          <h3>Q&A 快问快答</h3>
+          <ul>
+            <li><strong>Q:</strong> 这把剑我买回来都有怎么用呢？<br><strong>A:</strong> 我们鼓励您使用它练习武术，以一只真正的剑施展技术的感觉是非常不同的，当然即使是挂起来，它至少会是不掉档次的东西。</li>
+            <li><strong>Q:</strong> 可以在哪使用？<br><strong>A:</strong> 作为一把管制刀具，我不推荐您将她/他/它带到公共场所，因此请在私人场所，例如自己的家，私人俱乐部这类地方使用。请不要给身边的人造成困扰和伤害喔。</li>
+            <li><strong>Q:</strong> 会被收缴吗？<br><strong>A:</strong> 和上面的问题相同，请低调，安全，正确地使用她/他/它。同时如果没有针对性举报是没有问题的。但是如若发生意外，由于您已阅读过FAQ，我们是不会承担损失赔偿的，所以请避免出现针对性举报的情况，也不要违反相关条例。</li>
+            <li><strong>Q:</strong> 如何保养？<br><strong>A:</strong> 请涂油，如果长期不玩，或者地区气候湿润，请涂油和使用保鲜膜包裹。</li>
+            <li><strong>Q:</strong> 为什么我感觉你们这砍起来没有xxx那么厉害啊？是不是你们在诓我？<br><strong>A:</strong> 如果在技术没有问题的情况下，可以试试优化开刃情况，我们会出教程，另外不同的设计斩切效果是不一样的，如果希望学习具体切割技术我们未来会出教程</li>
+            <li><strong>Q:</strong> 剑身数据如何？<br><strong>A:</strong> 大部分剑参考古物设计，极致的渐薄和丰美的轮廓让她可以轻盈而又可以迅速而有力的执行斩切，刺击，啄击等战术动作，钢质鞘身薄而贴身，让佩戴时的重量也不会成为过度的负担</li>
+            <li><strong>Q:</strong> 这把剑的价格有点贵，我感觉不太能负担的起怎么办？<br><strong>A:</strong> 非常抱歉，由于整把剑都需要全新规格制作的成本（装具开模和刀条设计和全新规格铁鞘），这支剑的成本实在是很难压下来，但我们也保证，这把经过精修检查后的刀剑绝对是市场上目前绝无仅有而物超所值的</li>
+          </ul>
+
+          <p><strong>特别声明：</strong>我们生产的产品为仿古工艺品以及训练器材，凡阅读后如有违规行为与我方无关，属个人行为。</p>
+          <p>如有合作信息请发邮箱。联系方式验证信息为“我已全部阅读萨兰工艺品/StrikeBlade的各项条款并确认。”</p>
+        </div>
+      </details>
+    </div>
   </div>
 </body>
 </html>
